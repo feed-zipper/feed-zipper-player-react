@@ -1,6 +1,6 @@
 {
   "name": "@feed-zipper/feed-zipper-player-react",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Lightweight React wrapper for FeedZipper Player embed.",
   "keywords": [
     "feedzipper",
