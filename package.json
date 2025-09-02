@@ -1,0 +1,53 @@
+{
+  "name": "feed-zipper-player-react",
+  "version": "0.1.1",
+  "description": "Lightweight React wrapper for FeedZipper Player embed.",
+  "keywords": [
+    "feedzipper",
+    "player",
+    "react",
+    "video",
+    "embed"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feed-zipper/feed-zipper-player-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/feed-zipper/feed-zipper-player-react/issues"
+  },
+  "homepage": "https://github.com/feed-zipper/feed-zipper-player-react#readme",
+  "author": "feed-zipper",
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --sourcemap --clean",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch --sourcemap",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run typecheck"
+  }
+}
