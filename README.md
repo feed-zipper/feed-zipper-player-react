@@ -31,7 +31,7 @@ export default function Page() {
 - `channelId` (string) – required. Maps to `data-id` on the embed script.
 - `apiKey` (string) – required. Maps to `data-key` on the embed script.
 - `className` (string) – optional. Applied to the outer container.
-- `style` (CSSProperties) – optional. Applied to the outer container. Defaults to `width: 100%`.
+- `style` (CSSProperties) – optional. Applied to the outer container.
 - `referrerPolicy` (ReferrerPolicy) – optional. Sets `data-referrerpolicy` to control referrer behavior for the embed.
 
 ## Notes
