@@ -35,7 +35,7 @@ export function FZPlayer({ channelId, apiKey, className, style, referrerPolicy }
     }, [channelId, apiKey, referrerPolicy]);
 
     return (
-        <div ref={containerRef} className={className} style={{ width: "100%", ...style }}>
+        <div ref={containerRef} className={className} style={style}>
             <div className="fzPlayer" />
         </div>
     );
