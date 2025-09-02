@@ -5,15 +5,15 @@ Lightweight React wrapper for the FeedZipper Player embed.
 ## Install
 
 ```bash
-npm install feed-zipper-player-react
+npm install @feed-zipper/feed-zipper-player-react
 # or
-yarn add feed-zipper-player-react
+yarn add @feed-zipper/feed-zipper-player-react
 ```
 
 ## Usage
 
 ```tsx
-import FZPlayer from "feed-zipper-player-react";
+import FZPlayer from "@feed-zipper/feed-zipper-player-react";
 
 export default function Page() {
   return (

@@ -1,5 +1,5 @@
 {
-  "name": "feed-zipper-player-react",
+  "name": "@feed-zipper/feed-zipper-player-react",
   "version": "0.1.1",
   "description": "Lightweight React wrapper for FeedZipper Player embed.",
   "keywords": [
@@ -49,5 +49,6 @@
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch --sourcemap",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run typecheck"
-  }
+  },
+  "publishConfig": { "access": "public" }
 }
